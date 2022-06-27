@@ -21,24 +21,30 @@ require_once("config.php");
 
 /*
 $aluno = new Usuario();
-
-$aluno->setDeslogin("aluno");
-$aluno->setDessenha("@luno");
-$aluno->getDtcadastro(date("d/m/Y H:i:s"));
-
+$aluno->setDeslogin("Antonio");
+$aluno->setDessenha("Vovo");
+$aluno->getDtcadastro(new DateTime);
 $aluno->insert();
-
 echo $aluno;
-*/
+ */
+
 /*criando um novo usuario
 $aluno = new Usuario("joão", "12345");
 $aluno->insert();
-
 echo $aluno;
 */
 
+/*Aterar um usuario
 $usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("Professor", "!@#$%");
+echo $usuario; 
+ */
+
+//deletar um usuario
+$usuario = new Usuario();
+$usuario->loadById(13);
+$usuario->delete();
 echo $usuario;
+
 ?>
