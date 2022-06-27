@@ -30,10 +30,15 @@ $aluno->insert();
 
 echo $aluno;
 */
-
+/*criando um novo usuario
 $aluno = new Usuario("joão", "12345");
 $aluno->insert();
 
 echo $aluno;
+*/
 
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->update("Professor", "!@#$%");
+echo $usuario;
 ?>
